@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BizFlow AI - Your Small Business Automation Partner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8faff;
+            color: #333;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Header/Hero Section */
+        .hero {
+            background-color: #2e6ff7; /* A friendly blue */
+            color: #ffffff;
+            text-align: center;
+            padding: 80px 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #34d399; /* A vibrant green */
+            color: #ffffff;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            background-color: #27a67f;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 20px;
+            margin-top: -40px; /* Overlap with hero */
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .features h2 {
+            font-size: 2.2em;
+            margin-bottom: 40px;
+            color: #2e6ff7;
+        }
+
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            text-align: left;
+        }
+
+        .feature-item {
+            background-color: #f2f7ff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-item h3 {
+            font-size: 1.4em;
+            color: #2e6ff7;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .feature-item p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        /* Pricing Teaser Section */
+        .pricing-teaser {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #f8faff;
+        }
+
+        .pricing-teaser h2 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            color: #2e6ff7;
+        }
+
+        .pricing-teaser p {
+            font-size: 1.1em;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            color: #555;
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #333;
+            color: #ffffff;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 0.9em;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .footer p {
+            margin: 0;
+            padding-bottom: 10px;
+        }
+
+        .footer a {
+            color: #34d399;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #ffffff;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .hero p {
+                font-size: 1.1em;
+            }
+
+            .features h2, .pricing-teaser h2 {
+                font-size: 1.8em;
+            }
+
+            .feature-list {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-button {
+                padding: 12px 25px;
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 60px 15px;
+            }
+
+            .features {
+                padding: 40px 15px;
+            }
+
+            .pricing-teaser {
+                padding: 40px 15px;
+            }
+
+            .footer {
+                padding: 30px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Stop Drowning in Daily Tasks. Let AI Handle It for Your Small Business.</h1>
+            <p>BizFlow AI intelligently automates repetitive administrative and operational tasks, freeing you to focus on growth, not grunt work. Reclaim your time and boost efficiency.</p>
+            <a href="#get-started" class="cta-button">Get Started Now</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Streamline Your Workflow with Powerful AI Features</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h3>AI-Powered Task Automation</h3>
+                    <p>Our intelligent engine learns your workflow and automates tasks, from data entry to customer follow-ups, based on your specific rules and needs.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Ready-to-Use Automation Templates</h3>
+                    <p>Jumpstart your productivity with pre-built templates for common small business tasks. Customize them in minutes, no coding required.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Performance Monitoring & Reporting</h3>
+                    <p>Track time saved and tasks completed with intuitive dashboards. See exactly how BizFlow AI is improving your business operations.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Secure & Customizable Workspaces</h3>
+                    <p>Set up your unique workspace, define tasks securely, and manage preferences with robust data handling and privacy controls.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-teaser" id="get-started">
+        <div class="container">
+            <h2>Simple, Transparent Pricing for Every Small Business</h2>
+            <p>We believe powerful automation should be accessible. BizFlow AI offers flexible plans designed to grow with your business, without hidden fees.</p>
+            <a href="#" class="cta-button">View Plans & Start Free Trial</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 BizFlow AI. All rights reserved.</p>
+            <p>Contact us: <a href="mailto:info@bizflowai.com">info@bizflowai.com</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
